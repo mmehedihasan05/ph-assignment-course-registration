@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import Course from "./Course";
 
@@ -15,7 +16,6 @@ const Courses = () => {
 
     return (
         <div>
-            <h1 className="text-2xl">Course Contents Goes here</h1>
             <div className=" grid grid-cols-3 gap-4">
                 {courses.map((course) => (
                     <Course key={course.id} course={course}></Course>

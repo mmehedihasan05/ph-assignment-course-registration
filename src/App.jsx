@@ -11,10 +11,11 @@ function App() {
                 <Header></Header>
                 <div className=" grid grid-cols-4 gap-4">
                     {/* Course Contents */}
-                    <div className=" col-span-3">
+                    <div className="col-span-3">
                         <Courses></Courses>
                     </div>
-                    <div className=" order-1">
+                    {/* Cart */}
+                    <div className="order-1">
                         <Cart></Cart>
                     </div>
                 </div>
