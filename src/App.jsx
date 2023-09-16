@@ -5,6 +5,9 @@ import Courses from "./components/Course Contents/Courses";
 import Cart from "./components/Cart/Cart";
 import { useState } from "react";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
     const [selectedCourses, setSelectedCourses] = useState([]);
     const [totalCredit, setTotalCredit] = useState(0);
@@ -14,6 +17,7 @@ function App() {
         let ans = selectedCourses.findIndex((selectedCourse) => selectedCourse.id === course.id);
 
         if (ans !== -1) {
+            toast.warning("This course has already been taken!");
             return;
         }
 
@@ -24,7 +28,7 @@ function App() {
             setTotalPrice(totalPrice + course.price);
             setTotalCredit(tempTotalCredit);
         } else {
-            return;
+            toast.warning("You can't take more than 20 hour credit!");
         }
     };
 
@@ -45,7 +49,15 @@ function App() {
                         ></Cart>
                     </div>
                 </div>
-                <footer></footer>
+                <footer>
+                    <ToastContainer
+                        autoClose={5000}
+                        rtl={false}
+                        pauseOnFocusLoss
+                        pauseOnHover
+                        theme="light"
+                    />
+                </footer>
             </div>
         </>
     );
