@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import "./App.css";
 import Header from "./components/Header/Header";
 import Courses from "./components/Course Contents/Courses";
@@ -36,28 +35,34 @@ function App() {
         <>
             <div className=" max-w-7xl mx-auto px-4 pb-8">
                 <Header></Header>
-                <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {/* Course Contents */}
-                    <div className=" col-span-1 md:col-span-2 lg:col-span-3">
-                        <Courses handleClick={handleClick}></Courses>
+
+                <main>
+                    <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        {/* Course Contents */}
+                        <div className=" col-span-1 md:col-span-2 lg:col-span-3">
+                            <Courses handleClick={handleClick}></Courses>
+                        </div>
+                        {/* Cart */}
+                        <div className=" -order-1 md:order-1">
+                            <Cart
+                                selectedCourses={selectedCourses}
+                                totalPrice={totalPrice}
+                                totalCredit={totalCredit}
+                            ></Cart>
+                        </div>
                     </div>
-                    <div className=" -order-1 md:order-1">
-                        <Cart
-                            selectedCourses={selectedCourses}
-                            totalPrice={totalPrice}
-                            totalCredit={totalCredit}
-                        ></Cart>
-                    </div>
-                </div>
-                <footer>
-                    <ToastContainer
-                        autoClose={5000}
-                        rtl={false}
-                        pauseOnFocusLoss
-                        pauseOnHover
-                        theme="light"
-                    />
-                </footer>
+                </main>
+
+                <footer></footer>
+
+                {/* Toaster */}
+                <ToastContainer
+                    autoClose={5000}
+                    rtl={false}
+                    pauseOnFocusLoss
+                    pauseOnHover
+                    theme="light"
+                />
             </div>
         </>
     );

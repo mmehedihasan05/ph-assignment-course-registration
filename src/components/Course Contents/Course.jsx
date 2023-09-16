@@ -1,10 +1,10 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
+import PropTypes from "prop-types";
+
 import { BsCurrencyDollar } from "react-icons/bs";
 import { HiOutlineBookOpen } from "react-icons/hi2";
 
 const Course = ({ course, handleClick }) => {
-    const { id, cover, title, description, credit, price } = course;
+    const { cover, title, description, credit, price } = course;
 
     return (
         <div className="card bg-base-100 space-y-4 p-4 flex flex-col">
@@ -56,3 +56,7 @@ const Course = ({ course, handleClick }) => {
 };
 
 export default Course;
+Course.propTypes = {
+    course: PropTypes.object.isRequired,
+    handleClick: PropTypes.func.isRequired,
+};

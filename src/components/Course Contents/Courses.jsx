@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import Course from "./Course";
 
 const Courses = ({ handleClick }) => {
@@ -9,7 +8,6 @@ const Courses = ({ handleClick }) => {
         fetch("courseData.json")
             .then((res) => res.json())
             .then((data) => {
-                console.log(data);
                 setCourses(data);
             });
     }, []);
@@ -26,3 +24,6 @@ const Courses = ({ handleClick }) => {
 };
 
 export default Courses;
+Courses.propTypes = {
+    handleClick: PropTypes.func.isRequired,
+};

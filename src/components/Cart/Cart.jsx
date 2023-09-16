@@ -1,7 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-
-/* eslint-disable no-unused-vars */
+import PropTypes from "prop-types";
 const Cart = ({ selectedCourses, totalCredit, totalPrice }) => {
     return (
         <div className="card bg-base-100 p-6">
@@ -41,3 +38,8 @@ const Cart = ({ selectedCourses, totalCredit, totalPrice }) => {
 };
 
 export default Cart;
+Cart.propTypes = {
+    selectedCourses: PropTypes.array.isRequired,
+    totalCredit: PropTypes.number.isRequired,
+    totalPrice: PropTypes.number.isRequired,
+};
