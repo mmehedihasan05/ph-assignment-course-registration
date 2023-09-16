@@ -9,13 +9,12 @@ function App() {
         <>
             <div className=" max-w-7xl mx-auto px-4 pb-8">
                 <Header></Header>
-                <div className=" grid grid-cols-4 gap-4">
+                <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {/* Course Contents */}
-                    <div className="col-span-3">
+                    <div className=" col-span-1 md:col-span-2 lg:col-span-3">
                         <Courses></Courses>
                     </div>
-                    {/* Cart */}
-                    <div className="order-1">
+                    <div className=" -order-1 md:order-1">
                         <Cart></Cart>
                     </div>
                 </div>

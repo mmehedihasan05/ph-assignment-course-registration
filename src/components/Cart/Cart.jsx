@@ -1,5 +1,5 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-
 const Cart = () => {
     return (
         <div className="card bg-base-100 p-6">
@@ -18,11 +18,11 @@ const Cart = () => {
                 </div>
                 <hr />
                 <div>
-                    <h3 className=" text-[#1c1b1bcc] font-medium">Total Credit Hour : {} 13</h3>
+                    <h3 className=" text-[#1c1b1bcc] font-medium">Total Credit Hour : {}13</h3>
                 </div>
                 <hr />
                 <div>
-                    <h3 className=" text-[#1c1b1bcc] font-bold">Total Price : {}48.99 USD</h3>
+                    <h3 className=" text-[#1c1b1bcc] font-bold">Total Price : {}45 USD</h3>
                 </div>
             </div>
         </div>
