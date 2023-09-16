@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "cover": "https://i.ibb.co/DY0rGVX/Web-Development-with-HTML-CSS-Java-Script.jpg",
+    "title": "Web Development with HTML, CSS & Javascript",
+    "description": "A detailed step-by-step web development practical guide designed to help beginners become professional developers.",
+    "credit": 5,
+    "price": 39.99
+  },
+  {
+    "id": 2,
+    "cover": "https://i.ibb.co/x66KVnm/The-Complete-Java-Script-Course.png",
+    "title": "The Complete JavaScript Course",
+    "description": "Learn javascript online and supercharge your web design with this Javascript for beginners training course.",
+    "credit": 6,
+    "price": 64.99
+  },
+  {
+    "id": 3,
+    "cover": "https://i.ibb.co/FKFRk7v/React-The-Complete-Guide-2023.jpg",
+    "title": "React - The Complete Guide 2023",
+    "description": "Dive in and learn React.js from scratch! Learn React, Hooks, Redux, React Router, Next.js, Best Practices and way more!",
+    "credit": 5,
+    "price": 47.00
+  },
+  {
+    "id": 4,
+    "cover": "https://i.ibb.co/fxvkWyc/Database-Programming-with-Python.jpg",
+    "title": "Database Programming with Python",
+    "description": "Learn how to integrate free and enterprise databases into your Python workflow including SQLite, MySQL, and SQL Server",
+    "credit": 3,
+    "price": 49.00
+  },
+  {
+    "id": 5,
+    "cover": "https://i.ibb.co/gy2TWhR/C-and-C-Specialization-transformed.png",
+    "title": "C/C++ Specialization for All",
+    "description": "Learn to Code in C & C++. Gain a deep understanding of computer programming by learning to code, debug, and solve complex problems with C and C++.",
+    "credit": 4,
+    "price": 54
+  },
+  {
+    "id": 6,
+    "cover": "https://i.ibb.co/bXT22HG/Cybersecurity-for-Everyone.png",
+    "title": "Cybersecurity for Everyone",
+    "description": "Knowledge that everyone must have. Learn how to protect your personal data from hackers. Take cyber security seriously.",
+    "credit": 2,
+    "price": 39.50
+  },
+  {
+    "id": 7,
+    "cover": "https://i.ibb.co/H4dqgzG/Learn-Python-Programming-Masterclass.png",
+    "title": "Learn Python Programming",
+    "description": "This Python For Beginners Course Teaches You The Python Language Fast. Includes Python Online Training With Python 3",
+    "credit": 3,
+    "price": 49.99
+  },
+  {
+    "id": 8,
+    "cover": "https://i.ibb.co/SdyDkZR/Node-JS-The-Complete-Guide.png",
+    "title": "Learn and Understand NodeJS",
+    "description": "Dive deep under the hood of NodeJS. Learn V8, Express, the MEAN stack, core Javascript concepts, and more.",
+    "credit": 7,
+    "price": 79.99
+  },
+  {
+    "id": 9,
+    "cover": "https://i.ibb.co/RvhTxvv/object-oriented-programming-in-python.jpg",
+    "title": "Python OOP Mastery",
+    "description": "Learn Object Oriented Programming in Python with Step-by-Step Video Lectures, Projects, Exercises, Diagrams and More.",
+    "credit": 7,
+    "price": 44.99
+  }
+]
