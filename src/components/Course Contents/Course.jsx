@@ -3,7 +3,7 @@
 import { BsCurrencyDollar } from "react-icons/bs";
 import { HiOutlineBookOpen } from "react-icons/hi2";
 
-const Course = ({ course }) => {
+const Course = ({ course, handleClick }) => {
     const { id, cover, title, description, credit, price } = course;
 
     return (
@@ -44,6 +44,9 @@ const Course = ({ course }) => {
                 <button
                     className="flex items-center gap-x-2
                 btn bg-[#2F80ED] hover:hover:bg-[#2f66ed] text-white text-md lg:text-lg"
+                    onClick={() => {
+                        handleClick(course);
+                    }}
                 >
                     Select
                 </button>
